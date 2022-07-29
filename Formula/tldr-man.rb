@@ -3,8 +3,8 @@ class TldrMan < Formula
 
   desc "Command-line TLDR client that displays tldr-pages as manpages"
   homepage "https://tldr-man.superatomic.dev"
-  url "https://files.pythonhosted.org/packages/02/da/b8e94396ad6dae9a06ad0b492f2b9f0642dafa0ad76ea11904b79d8e0790/tldr-man-1.0.1.tar.gz"
-  sha256 "a35b9682e30437acdad4e37f24b2c6fd00b3db0fba8e29b6a7c21c8972730a11"
+  url "https://files.pythonhosted.org/packages/7d/9d/c5e871a176323956cbc1e3c94c9dd8f685d56edc2921f18b0c17abb42c75/tldr-man-1.0.2.tar.gz"
+  sha256 "9e88b4b24a9b2ecf8efb46d07bc09547117ddfdcc0b02edec956a06de0bab27d"
   license "Apache-2.0"
   head "https://github.com/superatomic/tldr-man-client.git", branch: "main"
 
