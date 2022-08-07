@@ -3,8 +3,8 @@ class TldrMan < Formula
 
   desc "Command-line TLDR client that displays tldr-pages as manpages"
   homepage "https://tldr-man.superatomic.dev"
-  url "https://files.pythonhosted.org/packages/7d/9d/c5e871a176323956cbc1e3c94c9dd8f685d56edc2921f18b0c17abb42c75/tldr-man-1.0.2.tar.gz"
-  sha256 "9e88b4b24a9b2ecf8efb46d07bc09547117ddfdcc0b02edec956a06de0bab27d"
+  url "https://files.pythonhosted.org/packages/0d/15/c1e4c0276368a5eb6bded332e377c2716a92740489865c9d4a31ff9829d3/tldr-man-1.0.3.tar.gz"
+  sha256 "e2f5c90bba3b21a5c8ab99c230cf718149525ca6cab34f980ae310e9bf0ba6ed"
   license "Apache-2.0"
   head "https://github.com/superatomic/tldr-man-client.git", branch: "main"
 
@@ -56,6 +56,15 @@ class TldrMan < Formula
 
   def install
     virtualenv_install_with_resources
+
+    # Install shell completions
+    ENV.prepend_path "PATH", bin
+    system "./generate_completions.sh"
+    cd "completions" do
+      bash_completion.install "tldr.bash", "tldr-man.bash"
+      zsh_completion.install "tldr.zsh" => "_tldr", "tldr-man.zsh" => "_tldr-man"
+      fish_completion.install "tldr.fish", "tldr-man.fish"
+    end
   end
 
   test do
