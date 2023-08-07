@@ -3,10 +3,10 @@ class TldrMan < Formula
 
   desc "Command-line TLDR client that displays tldr-pages as manpages"
   homepage "https://tldr-man.superatomic.dev"
-  url "https://files.pythonhosted.org/packages/92/38/a5b588e311f3d15752b9061dfb52befa198f8068c132b277bee10310738b/tldr_man-1.3.0.tar.gz"
-  sha256 "6fcac2ec0117b6a304bce5380dd0aede2adae2d168a7594c61d5689aa167c976"
+  url "https://files.pythonhosted.org/packages/4d/85/c2cd07f87797b4d73462e208da881050dbc3552aad82601dce5c6a6d69df/tldr_man-1.3.1.tar.gz"
+  sha256 "af750074ddb1c8300c8741e884a3141556ad4ca52f80c2d99ebf9dce5c18b879"
   license "Apache-2.0"
-  head "https://github.com/superatomic/tldr-man-client.git", branch: "main"
+  head "https://github.com/superatomic/tldr-man.git", branch: "main"
 
   depends_on "poetry" => :build
   depends_on "pandoc"
