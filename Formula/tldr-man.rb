@@ -3,8 +3,8 @@ class TldrMan < Formula
 
   desc "Command-line TLDR client that displays tldr-pages as manpages"
   homepage "https://tldr-man.superatomic.dev"
-  url "https://files.pythonhosted.org/packages/a4/7e/24d83d24f7a89d5f5f7622cba470cd8c397990375440ae8724dbbca1802d/tldr_man-1.4.0.tar.gz"
-  sha256 "d1a36eaa5310d43dc0e354d7c24871e4d0c24c45cc418f5579ceff1bd2ac81e9"
+  url "https://files.pythonhosted.org/packages/20/46/67a85c64788d64011c83676974993b582295cfea31eedb224a345d48c0f4/tldr_man-1.4.1.tar.gz"
+  sha256 "b194ffa8354e97c73e90f9f7bef7433b7f0a9bdf2f84d6c5142df713a8d1a8b1"
   license "Apache-2.0"
   head "https://github.com/superatomic/tldr-man.git", branch: "main"
 
@@ -30,8 +30,8 @@ class TldrMan < Formula
   end
 
   resource "click-help-colors" do
-    url "https://files.pythonhosted.org/packages/6c/c1/abc07420cfdc046c1005e16bc8090bc1f226d631b2bd172e5a8f5524c127/click-help-colors-0.9.1.tar.gz"
-    sha256 "78cbcf30cfa81c5fc2a52f49220121e1a8190cd19197d9245997605d3405824d"
+    url "https://files.pythonhosted.org/packages/a8/5a/e38178c3fd7bb0a0f143ed5291f7f80d391431f262db5a5e16e7d8f34046/click-help-colors-0.9.2.tar.gz"
+    sha256 "756245e542d29226bb3bc056bfa58886f212ba2b82f4e8cf5fc884176ac96d72"
   end
 
   resource "idna" do
