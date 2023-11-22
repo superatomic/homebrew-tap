@@ -3,8 +3,8 @@ class TldrMan < Formula
 
   desc "Command-line TLDR client that displays tldr-pages as manpages"
   homepage "https://tldr-man.superatomic.dev"
-  url "https://files.pythonhosted.org/packages/20/46/67a85c64788d64011c83676974993b582295cfea31eedb224a345d48c0f4/tldr_man-1.4.1.tar.gz"
-  sha256 "b194ffa8354e97c73e90f9f7bef7433b7f0a9bdf2f84d6c5142df713a8d1a8b1"
+  url "https://files.pythonhosted.org/packages/15/5d/4ebb7c0d2b051a7c21d4865c42318405a6badad292c00c18d668bfdc2dbd/tldr_man-1.5.0.tar.gz"
+  sha256 "7ea88d108dd46a4469e598b1bb77b1006ff85db9a8d5523535dfc57a4cab245d"
   license "Apache-2.0"
   head "https://github.com/superatomic/tldr-man.git", branch: "main"
 
@@ -15,13 +15,13 @@ class TldrMan < Formula
   conflicts_with "homebrew/core/tldr", "homebrew/core/tealdeer", because: "both install `tldr` binaries"
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/98/98/c2ff18671db109c9f10ed27f5ef610ae05b73bd876664139cf95bd1429aa/certifi-2023.7.22.tar.gz"
-    sha256 "539cc1d13202e33ca466e88b2807e29f4c13049d6d87031a3c110744495cb082"
+    url "https://files.pythonhosted.org/packages/d4/91/c89518dd4fe1f3a4e3f6ab7ff23cb00ef2e8c9adf99dacc618ad5e068e28/certifi-2023.11.17.tar.gz"
+    sha256 "9b469f3a900bf28dc19b8cfbf8019bf47f7fdd1a65a1d4ffb98fc14166beb4d1"
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/2a/53/cf0a48de1bdcf6ff6e1c9a023f5f523dfe303e4024f216feac64b6eb7f67/charset-normalizer-3.2.0.tar.gz"
-    sha256 "3bb3d25a8e6c0aedd251753a79ae98a093c7e7b471faa3aa9a93a81431987ace"
+    url "https://files.pythonhosted.org/packages/63/09/c1bc53dab74b1816a00d8d030de5bf98f724c52c1635e07681d312f20be8/charset-normalizer-3.3.2.tar.gz"
+    sha256 "f30c3cb33b24454a82faecaf01b19c18562b1e89558fb6c56de4d9118a032fd5"
   end
 
   resource "click" do
@@ -30,8 +30,13 @@ class TldrMan < Formula
   end
 
   resource "click-help-colors" do
-    url "https://files.pythonhosted.org/packages/a8/5a/e38178c3fd7bb0a0f143ed5291f7f80d391431f262db5a5e16e7d8f34046/click-help-colors-0.9.2.tar.gz"
-    sha256 "756245e542d29226bb3bc056bfa58886f212ba2b82f4e8cf5fc884176ac96d72"
+    url "https://files.pythonhosted.org/packages/6f/50/76f51d9c7fcd72a12da466801f7c1fa3884424c947787333c74327b4fcf3/click-help-colors-0.9.4.tar.gz"
+    sha256 "f4cabe52cf550299b8888f4f2ee4c5f359ac27e33bcfe4d61db47785a5cc936c"
+  end
+
+  resource "filelock" do
+    url "https://files.pythonhosted.org/packages/70/70/41905c80dcfe71b22fb06827b8eae65781783d4a14194bce79d16a013263/filelock-3.13.1.tar.gz"
+    sha256 "521f5f56c50f8426f5e03ad3b281b490a87ef15bc6c526f168290f0c7148d44e"
   end
 
   resource "idna" do
@@ -45,8 +50,8 @@ class TldrMan < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/31/ab/46bec149bbd71a4467a3063ac22f4486ecd2ceb70ae8c70d5d8e4c2a7946/urllib3-2.0.4.tar.gz"
-    sha256 "8d22f86aae8ef5e410d4f539fde9ce6b2113a001bb4d189e0aed70642d602b11"
+    url "https://files.pythonhosted.org/packages/36/dd/a6b232f449e1bc71802a5b7950dc3675d32c6dbc2a1bd6d71f065551adb6/urllib3-2.1.0.tar.gz"
+    sha256 "df7aa8afb0148fa78488e7899b2c59b5f4ffcfa82e6c54ccb9dd37c1d7b52d54"
   end
 
   def install
